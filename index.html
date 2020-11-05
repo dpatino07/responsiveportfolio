@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio Website | Dom Patino</title>
+    <!-- CUSTOM CSS -->
+    <link rel="stylesheet" href="scss/styles.css">
+    <!-- BOOTSTRAP 4 -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- FONT AWESOME -->
+    <script src="https://kit.fontawesome.com/350fd410c5.js" crossorigin="anonymous"></script>
+    <!-- JQUERY -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- TYPED.JS -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+    <!-- AOS JS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+
+<body>
+    <section class="intro">
+        <div class="content">
+            <div class="header-group">
+                <h1 class="header-title">Dom Patino</h1>
+                <span id="typed"></span>
+            </div>
+        </div>
+    </section>
+    <section class="about-myself">
+        <img class="img-profile" src="images/profile.jpg"></img>
+        <h2>About me</h2>
+        <div class="presentation">Detail-oriented Web Developer with a solid educational background in Software
+            Development. I'm a strong believer in Mobile-First Development and have a passion for Responsive Web
+            Development. CIW Advanced HTML5 & CSS3 Certification, CIW UI Designer, and CompTIA Project+ Certified.
+        </div>
+        <div class="tech-stack container">
+            <div class="row">
+                <div class="col d-flex justify-content-center">
+                    <img src="https://img.icons8.com/color/128/000000/html-5.png" />
+                </div>
+                <div class="col d-flex justify-content-center">
+                    <img src="https://img.icons8.com/color/128/000000/css3.png" />
+                </div>
+                <div class="col d-flex justify-content-center">
+                    <img src="https://img.icons8.com/color/128/000000/javascript-logo-1.png" />
+                </div>
+                <div class="col d-flex justify-content-center">
+                    <img src="https://img.icons8.com/color/128/000000/sass.png" />
+                </div>
+                <div class="col d-flex justify-content-center">
+                    <img src="https://img.icons8.com/color/128/000000/bootstrap.png" />
+                </div>
+                <div class="col d-flex justify-content-center">
+                    <img src="https://img.icons8.com/color/128/000000/c-plus-plus-logo.png" />
+                </div>
+                <div class="col d-flex justify-content-center">
+                    <img src="https://img.icons8.com/color/128/000000/c-sharp-logo-2.png" />
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="services">
+        <h2>What I do</h2>
+        <div class="services-container">
+            <div class="service">
+                <div class="logo">
+                    <i class="fas fa-code" aria-hidden="true"></i>
+                </div>
+                <h3>Develop</h3>
+                <p>Writing and testing code is my specialty. While I develop mainly front end interfaces, my skillset
+                    extends to backend applications and databases. With modern programming knowledge, I can build
+                    quick-rendering, and efficiently coded applications.</p>
+            </div>
+            <div class="service">
+                <div class="logo">
+                    <i class="fas fa-mobile-alt" aria-hidden="true"></i>
+                </div>
+                <h3>Responsive Design</h3>
+                <p>With so many devices in consumers' hands nowadays, I build my applications and websites to function
+                    and visually scale with various devices. With the use of media queries, frameworks, and libraries, I
+                    can produce websites and applications across the board with consistent styling.</p>
+            </div>
+            <div class="service">
+                <div class="logo">
+                    <i class="fas fa-users" aria-hidden="true"></i>
+                </div>
+                <h3>Customer-Focused</h3>
+                <p>With users and consumers in mind, my focuse is to build easy-to-use, user friendly, intuitive user
+                    interfaces. These interfaces are designed with UI/UX principals to ensure a consistent flow when
+                    navigating and viewing my websites.</p>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </section>
+    <section class="portfolio">
+        <h2>Portfolio</h2>
+        <div>
+            <div class="projects row d-flex">
+                <div class="project col-12" data-aos="fade-right" data-aos-offset="400">
+                    <a class="project1" href="#" target="_blank">
+                        <div class="project-overlay"></div>
+                        <img class="project-image" src="images/ashewear.PNG">
+                        <div class="project-details">
+                            <p class="project-description">An E-Commerce landing page built to be responsive with SCSS
+                                and HTML5.</p>
+                            <button class="demo-btn"><a href="https://dpatino07.github.io/AsheWear/">Demo</a></button>
+                            <button class="source-btn"><a href="https://github.com/dpatino07/AsheWear">Source
+                                    Code</a></button>
+                        </div>
+                    </a>
+                </div>
+                <div class="project col-12" data-aos="fade-left" data-aos-offset="400">
+                    <a class="project2" href="#" target="_blank">
+                        <div class="project-overlay"></div>
+                        <img class="project-image" src="images/fitnesswebsite.PNG">
+                        <div class="project-details">
+                            <p class="project-description">A full page fitness website featuring animate on scroll and
+                                parallax effects.</p>
+                            <button class="demo-btn"><a
+                                    href="https://dpatino07.github.io/ParallaxSite-master/dist">Demo</a></button>
+                            <button class="source-btn"><a href="https://github.com/dpatino07/ParallaxSite-master">Source
+                                    Code</a></button>
+                        </div>
+                    </a>
+                </div>
+                <div class="project col-12" data-aos="fade-right" data-aos-offset="400">
+                    <a class="project3" href="#" target="_blank">
+                        <div class="project-overlay"></div>
+                        <img class="project-image" src="images/lolgallery.png">
+                        <div class="project-details">
+                            <p class="project-description">A responsive gallery website featuring lightbox, and
+                                filtering through JavaScript.</p>
+                            <button class="demo-btn"><a href="https://dpatino07.github.io/LoLGallery/">Demo</a></button>
+                            <button class="source-btn"><a href="https://github.com/dpatino07/LoLGallery">Source
+                                    Code</a></button>
+                        </div>
+                    </a>
+                </div>
+                <div class="project col-12" data-aos="fade-left" data-aos-offset="400">
+                    <a class="project5" href="#" target="_blank">
+                        <div class="project-overlay"></div>
+                        <img class="project-image" src="images/SPlus.PNG">
+                        <div class="project-details">
+                            <p class="project-description">Description</p>
+                            <button class="demo-btn"><a
+                                    href="https://dpatino07.github.io/S-Plus-Technologies/">Demo</a></button>
+                            <button class="source-btn"><a href="https://github.com/dpatino07/S-Plus-Technologies">Source
+                                    Code</a></button>
+                        </div>
+                    </a>
+                </div>
+                <div class="project col-12" data-aos="fade-right" data-aos-offset="400">
+                    <a class="project4" href="#" target="_blank">
+                        <div class="project-overlay"></div>
+                        <img class="project-image" src="images/ims.png">
+                        <div class="project-details">
+                            <p class="project-description">An inventory management system console app built with C#.NET
+                                and Windows Forms. Run application in console to demo.</p>
+                            <button class="source-btn"><a
+                                    href="https://github.com/dpatino07/InventoryManagementSystem">Source
+                                    Code</a></button>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="clear"></div>
+    </section>
+    <section class="contact">
+        <ul class="socials">
+            <li class="social">
+                <a href="mailto:dominique.patino123@gmail.com" target="_blank" class="email">
+                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                </a>
+            </li>
+            <li class="social">
+                <a href="https://www.linkedin.com/in/dom-patino/" target="_blank" class="LinkedIn">
+                    <i class="fa fa-linkedin" aria-hidden="true"></i>
+                </a>
+            </li>
+            <li class="social">
+                <a href="https://github.com/dpatino07" target="_blank" class="github">
+                    <i class="fa fa-github" aria-hidden="true"></i>
+                </a>
+            </li>
+        </ul>
+        <div class="clear"></div>
+    </section>
+    <!-- CUSTOM JS -->
+    <script src="js/app.js"></script>
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
