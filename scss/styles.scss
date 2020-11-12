@@ -37,7 +37,7 @@ section{
 }
 
 .intro{
-  background: url('https://wallpaperset.com/w/full/e/0/e/239576.jpg');
+  background: url('../images/hero-bg.jpeg');
   background-size: cover;
   background-attachment: fixed;
   height: 100%;
@@ -196,9 +196,6 @@ section{
   }
   
   .projects{
-    display: flex;
-    align-content: center;
-    justify-content: center;
     width: 100%;
     max-width: 1000px;
     margin: auto;
@@ -206,7 +203,7 @@ section{
     
     .project{
       position: relative;
-      width: 90%;
+      width: 100%;
       margin-left: 1.6666%;
       margin-right: 1.6666%;
       margin-bottom: 50px;
