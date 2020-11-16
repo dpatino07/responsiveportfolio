@@ -38,10 +38,13 @@ section h2 {
 }
 
 .intro {
-  background: url("../images/hero-bg.jpeg");
+  background: url("https://www.incimages.com/uploaded_files/image/1920x1080/getty_908748508_381147.jpg");
   background-size: cover;
   background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
   height: 100%;
+  width: auto;
 }
 
 .intro .content {
@@ -178,7 +181,7 @@ section h2 {
 
 .services .services-container .service .logo {
   background: #000111;
-  background: linear-gradient(135deg, #000111 0%, #380047 100%);
+  background: linear-gradient(135deg, #000111 0%, #001057 100%);
   width: 100px;
   height: 100px;
   line-height: 100px;
@@ -208,7 +211,7 @@ section h2 {
 }
 
 .portfolio {
-  background: #1f0029;
+  background: #002035;
   padding: 70px 10px;
 }
 
@@ -331,6 +334,9 @@ section h2 {
 }
 
 @media screen and (max-width: 800px) {
+  .intro {
+    background-attachment: none;
+  }
   .services .services-container .service {
     position: relative;
     width: 90%;
@@ -341,18 +347,24 @@ section h2 {
 }
 
 @media screen and (max-width: 640px) {
-  .intro .content .header-group {
+  .intro {
+    background-attachment: none;
+  }
+  .content .header-group {
     width: 350px;
   }
-  .intro .content .header-group .header-title {
+  .content .header-group .header-title {
     font-size: 2.5em;
   }
-  .intro .content .header-group span {
+  .content .header-group span {
     font-size: 1.2em;
   }
 }
 
 @media screen and (max-width: 480px) {
+  .intro {
+    background-attachment: none;
+  }
   .contact .socials {
     width: 100%;
   }

@@ -37,10 +37,13 @@ section{
 }
 
 .intro{
-  background: url('../images/hero-bg.jpeg');
+  background: url('https://www.incimages.com/uploaded_files/image/1920x1080/getty_908748508_381147.jpg');
   background-size: cover;
   background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
   height: 100%;
+  width: auto;
     
   .content{
     position: absolute;
@@ -297,6 +300,10 @@ section{
 
 // RESPONSIVE STYLES
 @media screen and (max-width: 800px) {
+
+  .intro {
+    background-attachment: none;
+  }
     .services .services-container .service{
     position: relative;
     width: 90%;
@@ -307,7 +314,10 @@ section{
 }
 
 @media screen and (max-width: 640px) {
-  .intro .content .header-group{
+  .intro {
+    background-attachment: none;
+  }
+  .content .header-group{
     width: 350px;
     
     .header-title{
@@ -319,7 +329,10 @@ section{
   }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 480px){
+  .intro {
+    background-attachment: none;
+  }
   .contact .socials{
     width: 100%;
     
