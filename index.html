@@ -29,7 +29,7 @@
             </div>
         </div>
     </section>
-    <section class="about-myself">
+    <section class="about-myself" id="about">
         <img class="img-profile" src="images/profile.jpg"></img>
         <h2>About me</h2>
         <div class="presentation">Detail-oriented Web Developer with a solid educational background in Software
@@ -62,7 +62,7 @@
             </div>
         </div>
     </section>
-    <section class="services">
+    <section class="services" id="services">
         <h2>What I do</h2>
         <div class="services-container">
             <div class="service">
@@ -95,82 +95,94 @@
         </div>
         <div class="clear"></div>
     </section>
-    <section class="portfolio">
+    <section class="portfolio" id="projects">
         <h2>Portfolio</h2>
         <div>
-            <div class="projects row d-flex">
-                <div class="project col-12" data-aos="fade-right" data-aos-offset="400">
-                    <a class="project1" href="https://dpatino07.github.io/AsheWear/" target="_blank">
-                        <div class="project-overlay"></div>
-                        <img class="project-image" src="images/ashewear.PNG">
-                        <div class="project-details">
-                            <p class="project-description">An E-Commerce landing page built to be responsive with SCSS
-                                and HTML5.</p>
-                            <button class="demo-btn"><a href="https://dpatino07.github.io/AsheWear/">Demo</a></button>
-                            <button class="source-btn"><a href="https://github.com/dpatino07/AsheWear">Source
-                                    Code</a></button>
-                        </div>
-                    </a>
-                </div>
-                <div class="project col-12" data-aos="fade-left" data-aos-offset="400">
-                    <a class="project2" href="https://dpatino07.github.io/ParallaxSite-master/dist" target="_blank">
-                        <div class="project-overlay"></div>
-                        <img class="project-image" src="images/fitnesswebsite.PNG">
-                        <div class="project-details">
-                            <p class="project-description">A full page fitness website featuring animate on scroll and
-                                parallax effects.</p>
-                            <button class="demo-btn"><a
-                                    href="https://dpatino07.github.io/ParallaxSite-master/dist">Demo</a></button>
-                            <button class="source-btn"><a href="https://github.com/dpatino07/ParallaxSite-master">Source
-                                    Code</a></button>
-                        </div>
-                    </a>
-                </div>
-                <div class="project col-12" data-aos="fade-right" data-aos-offset="400">
-                    <a class="project3" href="https://dpatino07.github.io/LoLGallery/" target="_blank">
-                        <div class="project-overlay"></div>
-                        <img class="project-image" src="images/lolgallery.png">
-                        <div class="project-details">
-                            <p class="project-description">A responsive gallery website featuring lightbox, and
-                                filtering through JavaScript.</p>
-                            <button class="demo-btn"><a href="https://dpatino07.github.io/LoLGallery/">Demo</a></button>
-                            <button class="source-btn"><a href="https://github.com/dpatino07/LoLGallery">Source
-                                    Code</a></button>
-                        </div>
-                    </a>
-                </div>
-                <div class="project col-12" data-aos="fade-left" data-aos-offset="400">
-                    <a class="project5" href="https://dpatino07.github.io/S-Plus-Technologies/" target="_blank">
-                        <div class="project-overlay"></div>
-                        <img class="project-image" src="images/SPlus.PNG">
-                        <div class="project-details">
-                            <p class="project-description">A responsive, managed service provider website.</p>
-                            <button class="demo-btn"><a
-                                    href="https://dpatino07.github.io/S-Plus-Technologies/">Demo</a></button>
-                            <button class="source-btn"><a href="https://github.com/dpatino07/S-Plus-Technologies">Source
-                                    Code</a></button>
-                        </div>
-                    </a>
-                </div>
-                <div class="project col-12" data-aos="fade-right" data-aos-offset="400">
-                    <a class="project4" href="https://github.com/dpatino07/InventoryManagementSystem" target="_blank">
-                        <div class="project-overlay"></div>
-                        <img class="project-image" src="images/ims.png">
-                        <div class="project-details">
-                            <p class="project-description">An inventory management system console app built with C#.NET
-                                and Windows Forms. Run application in console to demo.</p>
-                            <button class="source-btn"><a
-                                    href="https://github.com/dpatino07/InventoryManagementSystem">Source
-                                    Code</a></button>
-                        </div>
-                    </a>
+            <div class="projects justify-content-center align-items-center">
+                <div class="row">
+                    <div class="project col-lg-4 col-md-6 col-sm-12 col-xs-12" data-aos="fade-up" data-aos-offset="400"
+                        data-aos-easing="ease-in-out">
+                        <a class="project1" href="https://dpatino07.github.io/AsheWear/" target="_blank">
+                            <div class="project-overlay"></div>
+                            <img class="project-image" src="images/ashewear.PNG">
+                            <div class="project-details">
+                                <p class="project-description justify-content-center align-items-center">An E-Commerce
+                                    landing page built to be responsive with SCSS and HTML5.</p>
+                                <button class="demo-btn"><a
+                                        href="https://dpatino07.github.io/AsheWear/">Demo</a></button>
+                                <button class="source-btn"><a href="https://github.com/dpatino07/AsheWear">Source
+                                        Code</a></button>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="project col-lg-4 col-md-6 col-sm-12 col-xs-12" data-aos="fade-up" data-aos-offset="400"
+                        data-aos-easing="ease-in-out">
+                        <a class="project2" href="https://dpatino07.github.io/ParallaxSite-master/dist" target="_blank">
+                            <div class="project-overlay"></div>
+                            <img class="project-image" src="images/fitnesswebsite.PNG">
+                            <div class="project-details">
+                                <p class="project-description justify-content-center align-items-center">A full page
+                                    fitness website featuring animate on scroll and parallax effects.</p>
+                                <button class="demo-btn"><a
+                                        href="https://dpatino07.github.io/ParallaxSite-master/dist">Demo</a></button>
+                                <button class="source-btn"><a
+                                        href="https://github.com/dpatino07/ParallaxSite-master">Source Code</a></button>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="project col-lg-4 col-md-6 col-sm-12 col-xs-12" data-aos="fade-up" data-aos-offset="400"
+                        data-aos-easing="ease-in-out">
+                        <a class="project3" href="https://dpatino07.github.io/LoLGallery/" target="_blank">
+                            <div class="project-overlay"></div>
+                            <img class="project-image" src="images/lolgallery.png">
+                            <div class="project-details">
+                                <p class="project-description justify-content-center align-items-center">A responsive
+                                    gallery website featuring lightbox, and filtering through JavaScript.</p>
+                                <button class="demo-btn"><a
+                                        href="https://dpatino07.github.io/LoLGallery/">Demo</a></button>
+                                <button class="source-btn"><a href="https://github.com/dpatino07/LoLGallery">Source
+                                        Code</a></button>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="project col-lg-4 col-md-6 col-sm-12 col-xs-12" data-aos="fade-up" data-aos-offset="400"
+                        data-aos-easing="ease-in-out">
+                        <a class="project5" href="https://dpatino07.github.io/S-Plus-Technologies/" target="_blank">
+                            <div class="project-overlay"></div>
+                            <img class="project-image" src="images/SPlus.PNG">
+                            <div class="project-details">
+                                <p class="project-description justify-content-center align-items-center">A responsive,
+                                    managed service provider website.</p>
+                                <button class="demo-btn"><a
+                                        href="https://dpatino07.github.io/S-Plus-Technologies/">Demo</a></button>
+                                <button class="source-btn"><a
+                                        href="https://github.com/dpatino07/S-Plus-Technologies">Source Code</a></button>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="project col-lg-4 col-md-6 col-sm-12 col-xs-12" data-aos="fade-up" data-aos-offset="400"
+                        data-aos-easing="ease-in-out">
+                        <a class="project4" href="https://github.com/dpatino07/InventoryManagementSystem"
+                            target="_blank">
+                            <div class="project-overlay"></div>
+                            <img class="project-image" src="images/ims.png">
+                            <div class="project-details">
+                                <p class="project-description justify-content-center align-items-center">An inventory
+                                    management system console app built with C#.NET and Windows Forms. Run application
+                                    in console to demo.</p>
+                                <button class="source-btn"><a
+                                        href="https://github.com/dpatino07/InventoryManagementSystem">Source
+                                        Code</a></button>
+                            </div>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
         </div>
         <div class="clear"></div>
     </section>
-    <section class="contact">
+    <section class="contact" id="contact">
         <ul class="socials">
             <li class="social">
                 <a href="mailto:dominique.patino123@gmail.com" target="_blank" class="email">
