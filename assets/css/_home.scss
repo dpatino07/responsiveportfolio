@@ -1,0 +1,56 @@
+.home {
+    background-color: #000;
+    overflow: hidden;
+}
+
+.home__container {
+    position: relative;
+    height: calc(100vh - var(--header-height));
+    grid-template-rows: repeat(2, max-content);
+    align-content: space-around;
+    row-gap: 2rem;
+}
+
+.home__data {
+    border-left: 4px solid var(--first-color-lighten);
+    color: var(--first-color-lighten);
+    padding-left: 1.5rem;
+    z-index: var(--z-tooltip);
+}
+
+.home__name {
+    font-size: var(--biggest-font-size);
+}
+
+.home__profession {
+    font-size: .938rem;
+    margin-bottom: var(--mb-3);
+    display: block;
+    font-weight: var(--font-bold);
+}
+
+.home__img {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.home__img img {
+    width: 240px;
+}
+
+.home__social {
+    display: flex;
+    flex-direction: column;
+}
+
+.home__social-icon {
+    width: max-content;
+    font-size: 2.5rem;
+    margin-bottom: var(--mb-2);
+    color: var(--first-color-lighten);
+}
+
+.home__social-icon:hover {
+    color: var(--first-color-light);
+}
