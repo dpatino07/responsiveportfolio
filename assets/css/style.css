@@ -70,7 +70,7 @@
   text-align: center;
   margin-left: auto;
   margin-right: auto;
-  width: 80%;
+  width: 70%;
 }
 
 .about__description span {
@@ -88,6 +88,8 @@
 
 .qualification__container {
   row-gap: 2.5rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
 
 .qualification__title {
@@ -156,6 +158,18 @@
           transform: translateY(-0.5rem);
   -webkit-box-shadow: 0 6px 8px rgba(174, 190, 205, 0.4);
           box-shadow: 0 6px 8px rgba(174, 190, 205, 0.4);
+}
+
+.ex__icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .portfolio__nav {
@@ -467,7 +481,7 @@
     font-size: 2.5rem;
   }
   .contact__form {
-    width: 50%;
+    width: 70%;
     -ms-grid-column-align: center;
         justify-self: center;
   }

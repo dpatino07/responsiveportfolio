@@ -1,4 +1,5 @@
 // SHOW MENU //
+/*
 const showMenu = (toggleId, navId) => {
     const toggle = document.getElementById(toggleId),
         nav = document.getElementById(navId)
@@ -10,6 +11,18 @@ const showMenu = (toggleId, navId) => {
     }
 }
 showMenu('nav-toggle', 'nav-menu')
+*/
+
+function showMenu() {
+    let toggle = document.getElementById('nav-toggle');
+
+    if (toggle.className === 'nav__toggle') {
+        toggle.className += "show-menu";
+    }
+    else {
+        toggle.className = "nav__toggle";
+    }
+}
 
 // REMOVE MOBILE MENU //
 const navLink = document.querySelectorAll('.nav__link');
