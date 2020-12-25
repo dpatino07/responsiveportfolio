@@ -13,16 +13,12 @@ const showMenu = (toggleId, navId) => {
 showMenu('nav-toggle', 'nav-menu')
 */
 
-function showMenu() {
-    let toggle = document.getElementById('nav-toggle');
+let toggleBtn = document.querySelector('.nav__toggle');
+let navlist = document.querySelector('.nav__list');
 
-    if (toggle.className === 'nav__toggle') {
-        toggle.className += "show-menu";
-    }
-    else {
-        toggle.className = "nav__toggle";
-    }
-}
+toggleBtn.addEventListener('click', function () {
+    navlist.className += 'show-menu';
+})
 
 // REMOVE MOBILE MENU //
 const navLink = document.querySelectorAll('.nav__link');
