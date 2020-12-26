@@ -1,5 +1,4 @@
 // SHOW MENU //
-/*
 const showMenu = (toggleId, navId) => {
     const toggle = document.getElementById(toggleId),
         nav = document.getElementById(navId)
@@ -11,14 +10,6 @@ const showMenu = (toggleId, navId) => {
     }
 }
 showMenu('nav-toggle', 'nav-menu')
-*/
-
-let toggleBtn = document.querySelector('.nav__toggle');
-let navlist = document.querySelector('.nav__list');
-
-toggleBtn.addEventListener('click', function () {
-    navlist.className += 'show-menu';
-})
 
 // REMOVE MOBILE MENU //
 const navLink = document.querySelectorAll('.nav__link');
@@ -27,11 +18,11 @@ function linkAction() {
     const navMenu = document.getElementById('nav-menu');
     navMenu.classList.remove('show-menu');
 }
-navLink.forEach(n => n.addEventListener('click', linkAction))
+navLink.forEach(n => n.addEventListener('click', linkAction));
 
 
 // SCROLL SECTION ACTIVE LINK //
-const sections = document.querySelectorAll('section[id]')
+const sections = document.querySelectorAll('section[id]');
 
 function scrollActive() {
     const scrollY = window.pageYOffset
@@ -41,7 +32,7 @@ function scrollActive() {
         const sectionTop = current.offsetTop - 50
         sectionId = current.getAttribute('id')
 
-        if (scrollY > sectionTop && scrollY <= section + sectionHeight) {
+        if (scrollY > sectionTop && scrollY <= 'section' + sectionHeight) {
             document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.add('active-link')
         }
         else {
@@ -92,11 +83,12 @@ const linkPortfolio = document.querySelectorAll('.portfolio__item');
 
 function activePortfolio() {
     if (linkPortfolio) {
-        linkPortfolio.forEach(L => l.classList.remove('active-portfolio'))
+        linkPortfolio.forEach(l => l.classList.remove('active-portfolio'))
         this.classList.add('active-portfolio')
     }
 }
-linkPortfolio.forEach(L => l.addEventListener('click', activePortfolio));
+linkPortfolio.forEach(l => l.addEventListener('click', activePortfolio));
+
 
 
 // GSAP ANIMATION //
@@ -105,4 +97,13 @@ gsap.from('.home__data', { opacity: 0, duration: 2, delay: .8, y: 25 })
 gsap.from('.home__name, .home__profession, .home__button', { opacity: 0, duration: 2, delay: 1, y: 25, ease: 'expo.out', stagger: .2 })
 gsap.from('.nav__logo, .nav__toggle', { opacity: 0, duration: 2, delay: 1.5, y: 25, ease: 'expo.out', stagger: .2 })
 gsap.from('.nav__item', { opacity: 0, duration: 2, delay: 1.8, y: 25, ease: 'expo.out', stagger: .2 })
-gsap.from('.home__social-icon', { opacity: 0, duration: 2, delay: 2.3, y: 25, ease: 'expo.out', stagger: .2 })
+gsap.from('.home__social-icon', { opacity: 0, duration: 2, delay: 2.3, y: 25, ease: 'expo.out', stagger: .2 });
+
+// TYPED JS BACKSPACE
+var typed = new Typed('.home__profession', {
+    strings: ['Software Developer', 'Web Developer', 'Application Developer', 'JavaScript Developer'],
+    typeSpeed: 50,
+    backSpeed: 10,
+    smartBackspace: true,
+    loop: true
+});

@@ -40,7 +40,7 @@
 }
 
 .home__img img {
-  width: 240px;
+  width: 300px;
 }
 
 .home__social {
@@ -63,7 +63,7 @@
 }
 
 .home__social-icon:hover {
-  color: #0051d3;
+  color: #00c5a4;
 }
 
 .about__data {
@@ -367,7 +367,7 @@
 
 @media screen and (min-width: 576px) {
   .home__img img {
-    width: 330px;
+    width: 350px;
   }
   .about__container
 .qualification__container,
@@ -375,6 +375,9 @@
   .portfolio__container {
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
+  }
+  .about__description {
+    text-align: left;
   }
   .contact__form {
     width: 80%;
@@ -436,13 +439,13 @@
     margin-bottom: 0;
   }
   .home__img img {
-    width: 440px;
+    width: 400px;
   }
   .about__description {
-    text-align: initial;
+    text-align: left;
   }
   .about__img {
-    width: 300px;
+    width: 400px;
   }
   .qualification__box {
     display: -webkit-box;
@@ -495,6 +498,9 @@
   .qualification__container {
     -webkit-column-gap: 6rem;
             column-gap: 6rem;
+  }
+  .about__img {
+    width: 500px;
   }
 }
 
@@ -628,6 +634,23 @@ img {
           align-items: center;
 }
 
+@media screen and (max-width: 768px) {
+  .nav__menu {
+    position: fixed;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    padding-top: 1.5rem;
+    text-align: center;
+    background-color: #000;
+    -webkit-transition: .4s;
+    transition: .4s;
+    -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 0 0 1rem 1rem;
+  }
+}
+
 .nav__item {
   margin-bottom: var(--mb-3);
 }
@@ -642,13 +665,14 @@ img {
   color: var(--first-color-light);
 }
 
-.nav__logo, .nav__toggle {
-  color: var(--first-color-lighten);
+.nav__logo {
+  color: #00c5a4;
 }
 
 .nav__toggle {
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   cursor: pointer;
+  color: var(--first-color-lighten);
 }
 
 .show-menu {
@@ -778,23 +802,6 @@ img {
     --normal-font-size: 1rem;
     --small-font-size: .875rem;
     --smaller-font-size: .813rem;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .nav__menu {
-    position: fixed;
-    top: -100%;
-    left: 0;
-    width: 100%;
-    padding-top: 1.5rem;
-    text-align: center;
-    background-color: #000;
-    -webkit-transition: .4s;
-    transition: .4s;
-    -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    border-radius: 0 0 1rem 1rem;
   }
 }
 /*# sourceMappingURL=style.css.map */

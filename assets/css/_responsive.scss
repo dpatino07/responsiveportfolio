@@ -1,6 +1,6 @@
 @media screen and (min-width: 576px) {
     .home__img img {
-        width: 330px;
+        width: 350px;
     }
 
     .about__container
@@ -8,6 +8,10 @@
     .services__container,
     .portfolio__container {
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .about__description {
+        text-align: left;
     }
 
     .contact__form {
@@ -71,15 +75,15 @@
     }
 
     .home__img img {
-        width: 440px;
+        width: 400px;
     }
 
     .about__description {
-        text-align: initial;
+        text-align: left;
     }
 
     .about__img {
-        width: 300px;
+        width: 400px;
     }
 
     .qualification__box {
@@ -128,5 +132,9 @@
 
     .qualification__container {
         column-gap: 6rem;
+    }
+
+    .about__img {
+        width: 500px;
     }
 }
